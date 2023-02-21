@@ -11,6 +11,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<aspectj.version>1.8.10</aspectj.version>
 	</properties>
 
@@ -29,11 +31,11 @@
                     </argLine>
 				</configuration>
 				<dependencies>
-				<dependency>
-					<groupId>org.aspectj</groupId>
-					<artifactId>aspectjweaver</artifactId>
-					<version>${aspectj.version}</version>
-				</dependency>
+					<dependency>
+						<groupId>org.aspectj</groupId>
+						<artifactId>aspectjweaver</artifactId>
+						<version>${aspectj.version}</version>
+					</dependency>
 				</dependencies>
 			</plugin>
 			<plugin>
@@ -133,7 +135,7 @@
 			<version>2.8.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-<dependency>
+		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>5.0.9</version>
@@ -152,11 +154,11 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.3.1</version>
 		</dependency>
-		  <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.22</version>
-        </dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.22</version>
+		</dependency>
 	</dependencies>
-	
+
 </project>

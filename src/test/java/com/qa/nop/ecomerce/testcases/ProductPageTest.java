@@ -174,6 +174,5 @@ public class ProductPageTest extends BaseTestSuite {
         basePage.getWebElement(productspage.delteBtn).click();
         Utils.sleep(200);
         basePage.getWebElement(productspage.yesBtn).click();
-System.out.println("");
 	}
 }
