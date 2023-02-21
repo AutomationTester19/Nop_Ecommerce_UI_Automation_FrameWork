@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ECommerce UI Automation Test Suite">
+<listeners>
+   <listener class-name="com.dev.nop.ecomerce.Listeners.ExtentReportListener"></listener>
+</listeners>
+  <test name="Ecommerce Test UI Automation Regression Suite">
+    <classes>
+      <class name="com.qa.nop.ecomerce.testcases.ProductPageTest"></class>
+      <class name="com.qa.nop.ecomerce.testcases.DashBoardPageTest"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

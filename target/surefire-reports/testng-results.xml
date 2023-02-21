@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-19T09:44:10Z" name="ECommerce UI Automation Test Suite" finished-at="2023-02-19T09:45:34Z" duration-ms="84020">
+    <groups>
+    </groups>
+    <test started-at="2023-02-19T09:44:10Z" name="Ecommerce Test UI Automation Regression Suite" finished-at="2023-02-19T09:45:34Z" duration-ms="84020">
+      <class name="com.qa.nop.ecomerce.testcases.ProductPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:44:10Z" name="setUp" finished-at="2023-02-19T09:44:13Z" duration-ms="3356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nop_ecomerce_products_tc001()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:44:13Z" name="nop_ecomerce_products_tc001" finished-at="2023-02-19T09:44:13Z" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nop_ecomerce_products_tc001 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:44:13Z" name="tearDown" finished-at="2023-02-19T09:44:13Z" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:44:13Z" name="setUp" finished-at="2023-02-19T09:44:15Z" duration-ms="1654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nop_ecomerce_products_tc002()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:44:15Z" name="nop_ecomerce_products_tc002" finished-at="2023-02-19T09:44:19Z" duration-ms="3383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nop_ecomerce_products_tc002 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:44:19Z" name="tearDown" finished-at="2023-02-19T09:44:19Z" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:44:19Z" name="setUp" finished-at="2023-02-19T09:44:20Z" duration-ms="1557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nop_ecomerce_products_tc003()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:44:20Z" name="nop_ecomerce_products_tc003" finished-at="2023-02-19T09:44:53Z" duration-ms="32388" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //h1[normalize-space()='Products'] (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h1[normalize-space()='Products'] (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.dev.nop.ecomerce.PageObjects.BasePage.waitForElementToBePresent(BasePage.java:80)
+at com.qa.nop.ecomerce.testcases.ProductPageTest.nop_ecomerce_products_tc003(ProductPageTest.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='Products']"}
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [133862c0cc819ffb01e49146609fa8e4, findElement {using=xpath, value=//h1[normalize-space()='Products']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/2x/1z8rnfrs5pg...}, goog:chromeOptions: {debuggerAddress: localhost:49323}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49323/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 133862c0cc819ffb01e49146609fa8e4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nop_ecomerce_products_tc003 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:44:53Z" name="tearDown" finished-at="2023-02-19T09:44:53Z" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:44:53Z" name="setUp" finished-at="2023-02-19T09:44:56Z" duration-ms="3039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nop_ecomerce_products_tc004()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:44:56Z" name="nop_ecomerce_products_tc004" finished-at="2023-02-19T09:45:30Z" duration-ms="33222" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //h1[normalize-space()='Products'] (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h1[normalize-space()='Products'] (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.dev.nop.ecomerce.PageObjects.BasePage.waitForElementToBePresent(BasePage.java:80)
+at com.qa.nop.ecomerce.testcases.ProductPageTest.nop_ecomerce_products_tc004(ProductPageTest.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='Products']"}
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fedd603262260d27b063fb6cff778c74, findElement {using=xpath, value=//h1[normalize-space()='Products']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/2x/1z8rnfrs5pg...}, goog:chromeOptions: {debuggerAddress: localhost:49342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49342/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fedd603262260d27b063fb6cff778c74
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nop_ecomerce_products_tc004 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.nop.ecomerce.testcases.ProductPageTest@6a1d526c]" started-at="2023-02-19T09:45:30Z" name="tearDown" finished-at="2023-02-19T09:45:30Z" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.nop.ecomerce.testcases.ProductPageTest -->
+      <class name="com.qa.nop.ecomerce.testcases.DashBoardPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.nop.ecomerce.testcases.DashBoardPageTest@1f2f0109]" started-at="2023-02-19T09:45:30Z" name="setUp" finished-at="2023-02-19T09:45:32Z" duration-ms="1976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nop_ecomerce_dashboard_tc001()[pri:0, instance:com.qa.nop.ecomerce.testcases.DashBoardPageTest@1f2f0109]" started-at="2023-02-19T09:45:32Z" name="nop_ecomerce_dashboard_tc001" description="Verify After Login , By Default User is DashBoard Page" finished-at="2023-02-19T09:45:34Z" duration-ms="1869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nop_ecomerce_dashboard_tc001 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.nop.ecomerce.testcases.DashBoardPageTest@1f2f0109]" started-at="2023-02-19T09:45:34Z" name="tearDown" finished-at="2023-02-19T09:45:34Z" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.nop.ecomerce.testcases.DashBoardPageTest -->
+    </test> <!-- Ecommerce Test UI Automation Regression Suite -->
+  </suite> <!-- ECommerce UI Automation Test Suite -->
+</testng-results>

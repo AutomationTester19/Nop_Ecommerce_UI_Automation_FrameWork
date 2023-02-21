@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ECommerce UI Automation Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.dev.nop.ecomerce.Listeners.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Ecommerce Test UI Automation Regression Suite(failed)" verbose="0">
+    <classes>
+      <class name="com.qa.nop.ecomerce.testcases.ProductPageTest">
+        <methods>
+          <include name="nop_ecomerce_products_tc004"/>
+          <include name="nop_ecomerce_products_tc003"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.nop.ecomerce.testcases.ProductPageTest -->
+    </classes>
+  </test> <!-- Ecommerce Test UI Automation Regression Suite(failed) -->
+</suite> <!-- Failed suite [ECommerce UI Automation Test Suite] -->
