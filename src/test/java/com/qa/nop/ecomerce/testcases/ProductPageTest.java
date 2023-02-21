@@ -70,6 +70,7 @@ public class ProductPageTest extends BaseTestSuite {
 		basePage.waitForElementToBePresent(dashboardpage.searchBox);
 		dashboardpage.getWebElement(dashboardpage.searchBox).click();
 		dashboardpage.menuNavigation("Catalog~Products");
+		Utils.sleep(200);
 		basePage.waitForElementToBePresent(productspage.products_header);
 		boolean flag = basePage.getWebElement(productspage.products_header).isDisplayed();
 		Assert.assertEquals(true, flag, "Products Header Is Displayed");
@@ -93,6 +94,7 @@ public class ProductPageTest extends BaseTestSuite {
 		basePage.waitForElementToBePresent(dashboardpage.searchBox);
 		dashboardpage.getWebElement(dashboardpage.searchBox).click();
 		dashboardpage.menuNavigation("Catalog~Products");
+		Utils.sleep(200);
 		basePage.waitForElementToBePresent(productspage.products_header);
 		boolean flag = basePage.getWebElement(productspage.products_header).isDisplayed();
 		Assert.assertEquals(true, flag, "Products Header Is Displayed");
@@ -140,6 +142,7 @@ public class ProductPageTest extends BaseTestSuite {
 		basePage.waitForElementToBePresent(dashboardpage.searchBox);
 		dashboardpage.getWebElement(dashboardpage.searchBox).click();
 		dashboardpage.menuNavigation("Catalog~Products");
+		Utils.sleep(200);
 		basePage.waitForElementToBePresent(productspage.products_header);
 		boolean flag = basePage.getWebElement(productspage.products_header).isDisplayed();
 		Assert.assertEquals(true, flag, "Products Header Is Displayed");
