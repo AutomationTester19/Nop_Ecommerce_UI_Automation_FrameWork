@@ -109,7 +109,7 @@ public class ProductPageTest extends BaseTestSuite {
 		basePage.getWebElement(productspage.add_new_Btn).click();
 		Map<String, String> product_dataMap = new HashMap<String, String>();
 		product_dataMap.put("productName", "random");
-		product_dataMap.put("categoryName", "Computers");
+		product_dataMap.put("categoryName", "Electronics");
 		product_dataMap.put("manufactureName", "Apple");
 		productspage.createNewProduct(product_dataMap);
 		productspage.getWebElement(productspage.saveBtn).click();
@@ -156,7 +156,7 @@ public class ProductPageTest extends BaseTestSuite {
 		basePage.getWebElement(productspage.add_new_Btn).click();
 		Map<String, String> product_dataMap = new HashMap<String, String>();
 		product_dataMap.put("productName", "random");
-		product_dataMap.put("categoryName", "Computers");
+		product_dataMap.put("categoryName", "Electronics");
 		product_dataMap.put("manufactureName", "Apple");
 		productspage.createNewProduct(product_dataMap);
 		productspage.getWebElement(productspage.saveBtn).click();

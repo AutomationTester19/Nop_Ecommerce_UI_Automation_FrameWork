@@ -31,7 +31,7 @@ public class BasePage {
 	public static WebDriverWait wait;
 
 	Logger log = LogManager.getLogger(BasePage.class);
-	
+
 	public Properties getProperty() {
 
 		String filePath = System.getProperty("user.dir") + "//config.properties";
@@ -74,43 +74,55 @@ public class BasePage {
 		driver.manage().window().maximize();
 		driver.get(getPropertyValue("url"));
 	}
-	
+
 	public void waitForElementToBePresent(By locator) {
 
-		wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		try {
 			wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-			log.info("Element is present in the Dom " +locator);
+			log.info("Element is present in the Dom " + locator);
 		} catch (ElementNotInteractableException e) {
-			log.error("Element is not present in the Dom " +locator);
+			log.error("Element is not present in the Dom " + locator);
 			e.printStackTrace();
 		}
 	}
+
+	public void waitForElementToBePresent(WebElement locator) {
+
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		try {
+			wait.until(ExpectedConditions.visibilityOfAllElements(locator));
+			log.info("Element is present in the Dom " + locator);
+		} catch (ElementNotInteractableException e) {
+			log.error("Element is not present in the Dom " + locator);
+			e.printStackTrace();
+		}
+	}
+
 	public WebElement getWebElement(By locator) {
 
 		WebElement webElement = driver.findElement(locator);
 		return webElement;
 	}
-	
-	public String selectDropDownValue(By dropdownLocator,String value) {
-		
+
+	public String selectDropDownValue(By dropdownLocator, String value) {
+
 		String dropdwn = getLocatorAsString(dropdownLocator);
 		WebElement drpdown = null;
-		if(!dropdwn.isEmpty())
-		{
-			drpdown = driver.findElement(By.xpath(dropdwn+"//li[normalize-space()='"+value+"']"));
-			Utils.JSClick(drpdown);
+		drpdown = driver.findElement(By.xpath(dropdwn + "//li[normalize-space()='" + value + "']"));
+		if(drpdown.isDisplayed() && !dropdwn.isEmpty()) {
+		 waitForElementToBePresent(drpdown);
+		 Utils.JSClick(drpdown);
 		}
-		
-		log.info("Selected Value From DropDown " +value);
+		log.info("Selected Value From DropDown " + value);
 		return value;
 	}
-	
+
 	public static String getLocatorAsString(By by) {
-        String str = by.toString();
-        return str.substring(str.indexOf(" ") , str.length());
-      }
-	
+		String str = by.toString();
+		return str.substring(str.indexOf(" "), str.length());
+	}
+
 	public String getScreenshot() {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String path = System.getProperty("user.dir") + "/screenshots/" + System.currentTimeMillis() + ".png";
